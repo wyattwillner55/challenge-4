@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Code Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="clock">Time: 75</div>
+            <div> <button class='view-highscores'>View Highscores</button></div>
+            <div><button class="back-button"> Back To Start</button></div>
+        </header>
+        <main>
+            <h1 class="start-title">Coding Quiz</h1>
+            <div class="save-score">
+                <p>If you would like to submit your score to the Highscores please input your initals and hit submit!</p>
+                <form>
+                    <input type="text" id="initals" value="">
+                    <input type="button" value="Submit" onclick="saveScore()" />
+                </form>
+            </div>
+            <h2 class="bio">
+                <p>     
+                        This is a quiz to test your basic knowledge of coding. 
+                    You will have 75 seconds to answer the questions.  Every time you answer
+                    question wrong 10 seconds will be taken off the clock.  Your score is equal
+                    to your time at the end of the quiz.  Click start when you are ready.
+                </p>
+            </h2>
+            <div class="highscore-list"></div>
+                <button class="start-button">Start!</button>
+            <div class="ab">
+                <button class="ab1">answer1</button>
+                <button class="ab2">answer2</button>
+                <button class="ab3">answer3</button>
+                <button class="ab4">answer4</button>
+            </div>
+        </main>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
